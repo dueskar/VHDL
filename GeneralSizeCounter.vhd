@@ -13,7 +13,7 @@ end counter3c;
 architecture Behavioral of counter3c is
 signal count: STD_LOGIC_VECTOR (N-1 downto 0);
 begin
-process (clk, clr)
+process (clk, clr) -- CHANGE
     begin
         if clr = '1' then
             count <= (others => '0');
